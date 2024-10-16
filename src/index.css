@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+
+:root {
+  --header-height: 3.5rem;
+  --hue: 14;
+  --first-color: #0b3c74;
+  --first-color-alt: #5191ad;
+  --title-color: hsl(var(--hue), 4%, 100%);
+  --text-color: hsl(var(--hue), 4%, 95%);
+  --text-color-light: hsl(var(--hue), 4%, 55%);
+  --body-color: linear-gradient(
+    90deg,
+    hsl(0, 0%, 0%) 0%,
+    hsl(206, 100%, 7%) 100%
+  );
+  --container-color: linear-gradient(
+    136deg,
+    hsl(246, 100%, 22%) 0%,
+    hsl(199, 100%, 36%) 100%
+  );
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 4rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --font-medium: 300;
+  --font-semi-bold: 600;
+  --font-black: 900;
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --z-tooltip: 10;
+  --z-fixed: 101;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background: rgba(55, 55, 55, 0.2);
+  filter: blur(10px);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(84, 84, 84, 0.5);
+  border-radius: 10px;
+}
+
+/* Estilo del scrollbar para navegadores basados en WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;  /* Fondo del track del scrollbar */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Degradado */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #ff6a5a, #ff9966); /* Degradado al pasar el mouse */
+}
+
+/* Estilo del scrollbar para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: linear-gradient(45deg, #ff7e5f, #feb47b) #f1f1f1;
+}
+
